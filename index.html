@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documentations</title>
+    <title>Documentations</title> <!-- Titre de l'onglet -->
     <style>
         body, html {
             margin: 0;
@@ -12,14 +12,21 @@
             height: 100%;
             overflow: hidden;
         }
+        h1 {
+            font-size: 24px;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
         iframe {
             width: 100%;
-            height: 100%;
+            height: calc(100% - 40px); /* Soustrayez la hauteur du titre pour ajuster la taille de l'iframe */
             border: none;
         }
     </style>
 </head>
 <body>
+    <h1>Documentations</h1> <!-- Titre dans la barre de navigation -->
     <iframe src="https://aiss.bilel.gitlab.io/mkdocs/" frameborder="0"></iframe>
 </body>
 </html>
