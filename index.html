@@ -3,43 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documentations</title>
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-        }
-        iframe {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-    </style>
-    <script>
-        window.addEventListener('load', function() {
-            fetch('https://aiss.bilel.gitlab.io/mkdocs/')
-                .then(response => response.text())
-                .then(data => {
-                    const parser = new DOMParser();
-                    const doc = parser.parseFromString(data, 'text/html');
-
-                    document.title = doc.title; // Mettre à jour le titre de l'onglet
-                    const iframe = document.querySelector('iframe');
-                    iframe.src = 'https://aiss.bilel.gitlab.io/mkdocs/'; // Mettre à jour l'URL de l'iframe
-                })
-                .catch(error => {
-                    console.error('Erreur :', error);
-                });
-        });
-    </script>
+    <title>Redirection Invisible</title>
+    <meta http-equiv="refresh" content="0;url=https://aiss.bilel.gitlab.io/mkdocs/">
 </head>
 <body>
-    <iframe frameborder="0"></iframe>
+    <p>Redirection en cours...</p>
 </body>
 </html>
