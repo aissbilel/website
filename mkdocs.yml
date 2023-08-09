@@ -1,0 +1,16 @@
+site_name: Documentations
+site_url: https://mkdocs-aiss-bilel-303ebefcab3289e919ab52f928c7fcce515b7c150aac4.gitlab.io/
+site_dir: public
+theme:
+  name: material
+  palette:
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-4 
+        name: Switch to dark mode
